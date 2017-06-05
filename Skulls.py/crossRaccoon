@@ -133,7 +133,7 @@ print '\n Macaque Differences = ',len(q)
 print 
 print
 
-print tabulate([['Raccoon', len(k)], ['Coyote', len(l)], ['Opossum', len(m)], ['Fox', len(n)], ['Skunk', len(o)], ['Cat', len(p)], ['Macaque', len(q)]], headers=['Species', 'Differences'])
+print tabulate([['Beaver', len(k)], ['Coyote', len(l)], ['Opossum', len(m)], ['Fox', len(n)], ['Skunk', len(o)], ['Cat', len(p)], ['Macaque', len(q)]], headers=['Species', 'Differences'])
 
 print
 print
