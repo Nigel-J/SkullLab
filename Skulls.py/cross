@@ -22,5 +22,3 @@ print '\n', y
 print '\n Differences = ',len(y)
 
 
-
-#source code pulled from https://stackoverflow.com/questions/12226846/count-letter-differences-of-two-strings
