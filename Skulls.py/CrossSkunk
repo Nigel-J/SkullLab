@@ -1,3 +1,5 @@
+from tabulate import tabulate
+
 from Beaver import a
 from Raccoon import b
 from Coyote import c
@@ -10,121 +12,128 @@ from Macaque import h
 #-------
 
 u=zip(f,a)
-y=[]
+k=[]
 counter=0
 for i,j in u:
     if i==j:
 	print "x"	
         #print i,'--',j
     else:
-        y.append(j)
+        k.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Beaver Differences = ',len(y)
+print '\n Beaver Differences = ',len(k)
 
 #-------
 
 u=zip(f,b)
-y=[]
+l=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        l.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Raccoon Differences = ',len(y)
+print '\n Raccoon Differences = ',len(l)
 
 #-------
 
 u=zip(f,c)
-y=[]
+m=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        m.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Coyote Differences = ',len(y)
+print '\n Coyote Differences = ',len(m)
 
 #-------
 
 u=zip(f,d)
-y=[]
+n=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        n.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Opossum Differences = ',len(y)
+print '\n Opossum Differences = ',len(n)
 
 #-------
 
 u=zip(f,e)
-y=[]
+o=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        o.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Fox Differences = ',len(y)
+print '\n Fox Differences = ',len(o)
 
 #-------
 
 u=zip(f,g)
-y=[]
+p=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        p.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Cat Differences = ',len(y)
+print '\n Cat Differences = ',len(p)
 
 #-------
 
 u=zip(f,h)
-y=[]
+q=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        q.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Macaque Differences = ',len(y)
+print '\n Macaque Differences = ',len(q)
 
 #-------
  
+print 
+print
+
+print tabulate([['Beaver', len(k)], ['Raccoon', len(l)], ['Coyote', len(m)], ['Opossum', len(n)], ['Fox', len(o)], ['Cat', len(p)], ['Macaque', len(q)]], headers=['Species', 'Differences'])
+
+print
+print
