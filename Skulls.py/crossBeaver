@@ -1,0 +1,139 @@
+from tabulate import tabulate
+
+from Beaver import a
+from Raccoon import b
+from Coyote import c
+from Opossum import d
+from Fox import e
+from Skunk import f
+from Cat import g
+from Macaque import h
+
+#-------
+
+u=zip(a,b)
+k=[]
+counter=0
+for i,j in u:
+    if i==j:
+	print "x"	
+        #print i,'--',j
+    else:
+        k.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Raccoon Differences = ',len(k)
+
+#-------
+
+u=zip(a,c)
+l=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        l.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Coyote Differences = ',len(l)
+
+#-------
+
+u=zip(a,d)
+m=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        m.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Opossum Differences = ',len(m)
+
+#-------
+
+u=zip(a,e)
+n=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        n.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Fox Differences = ',len(n)
+
+#-------
+
+u=zip(a,f)
+o=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        o.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Skunk Differences = ',len(o)
+
+#-------
+
+u=zip(a,g)
+p=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        p.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Cat Differences = ',len(p)
+
+#-------
+
+u=zip(a,h)
+q=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        q.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Macaque Differences = ',len(q)
+
+#-------
+
+print 
+print
+
+print tabulate([['Raccoon', len(k)], ['Coyote', len(l)], ['Opossum', len(m)], ['Fox', len(n)], ['Skunk', len(o)], ['Cat', len(p)], ['Macaque', len(q)]], headers=['Species', 'Differences'])
+
+print
+print

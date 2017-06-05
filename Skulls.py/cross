@@ -1,0 +1,26 @@
+from Beaver import a
+from Raccoon import b
+from Coyote import c
+from Opossum import d
+from Fox import e
+from Skunk import f
+from Cat import g
+from Macaque import h
+
+u=zip(a,b)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print i,'--',j
+    else: 
+        y.append(j)
+        print i,'  ',j
+
+print '\n', y
+
+print '\n Differences = ',len(y)
+
+
+
+#source code pulled from https://stackoverflow.com/questions/12226846/count-letter-differences-of-two-strings

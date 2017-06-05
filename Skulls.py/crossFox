@@ -1,0 +1,130 @@
+from Beaver import a
+from Raccoon import b
+from Coyote import c
+from Opossum import d
+from Fox import e
+from Skunk import f
+from Cat import g
+from Macaque import h
+
+#-------
+
+u=zip(e,a)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+	print "x"	
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Beaver Differences = ',len(y)
+
+#-------
+
+u=zip(e,b)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Raccoon Differences = ',len(y)
+
+#-------
+
+u=zip(e,c)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Coyote Differences = ',len(y)
+
+#-------
+
+u=zip(e,d)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Opossum Differences = ',len(y)
+
+#-------
+
+u=zip(e,f)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Skunk Differences = ',len(y)
+
+#-------
+
+u=zip(e,g)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Cat Differences = ',len(y)
+
+#-------
+
+u=zip(e,h)
+y=[]
+counter=0
+for i,j in u:
+    if i==j:
+        print "x"
+        #print i,'--',j
+    else:
+        y.append(j)
+        #print i,'  ',j
+
+#print '\n', y
+
+print '\n Macaque Differences = ',len(y)
+
+#-------
+ 
