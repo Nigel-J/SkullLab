@@ -1,3 +1,5 @@
+from tabulate import tabulate
+
 from Beaver import a
 from Raccoon import b
 from Coyote import c
@@ -10,121 +12,129 @@ from Macaque import h
 #-------
 
 u=zip(h,a)
-y=[]
+k=[]
 counter=0
 for i,j in u:
     if i==j:
 	print "x"	
         #print i,'--',j
     else:
-        y.append(j)
+        k.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Beaver Differences = ',len(y)
+print '\n Beaver Differences = ',len(k)
 
 #-------
 
 u=zip(h,b)
-y=[]
+l=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        l.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Raccoon Differences = ',len(y)
+print '\n Raccoon Differences = ',len(l)
 
 #-------
 
 u=zip(h,c)
-y=[]
+m=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        m.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Coyote Differences = ',len(y)
+print '\n Coyote Differences = ',len(m)
 
 #-------
 
 u=zip(h,d)
-y=[]
+n=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        n.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Opossum Differences = ',len(y)
+print '\n Opossum Differences = ',len(n)
 
 #-------
 
 u=zip(h,e)
-y=[]
+o=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        o.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Fox Differences = ',len(y)
+print '\n Fox Differences = ',len(o)
 
 #-------
 
 u=zip(h,f)
-y=[]
+p=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        p.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Skunk Differences = ',len(y)
+print '\n Skunk Differences = ',len(p)
 
 #-------
 
 u=zip(h,g)
-y=[]
+q=[]
 counter=0
 for i,j in u:
     if i==j:
         print "x"
         #print i,'--',j
     else:
-        y.append(j)
+        q.append(j)
         #print i,'  ',j
 
 #print '\n', y
 
-print '\n Cat Differences = ',len(y)
+print '\n Cat Differences = ',len(q)
 
 #-------
+
+print 
+print
+
+print tabulate([['Beaver', len(k)], ['Raccoon', len(l)], ['Coyote', len(m)], ['Opossum', len(n)], ['Fox', len(o)], ['Skunk', len(p)], ['Cat', len(q)]], headers=['Species', 'Differences'])
+
+print
+print
  
